@@ -22,7 +22,7 @@ AFRAME.registerComponent("markerhandler", {
       // Handling Click Events
     badButton.addEventListener("click", function () {
         swal({
-          icon: "warning",
+          icon: "./assets/unhealthy.png",
           title: "Bad Nutrients",
           text: "placeholder"
         });
@@ -30,7 +30,7 @@ AFRAME.registerComponent("markerhandler", {
 
     goodButton.addEventListener("click", () => {
         swal({
-          icon: "success",
+          icon: "./assets/healthy.png",
           title: "Good Nutrients",
           text: "placeholder"
         });

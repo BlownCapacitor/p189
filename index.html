@@ -46,7 +46,6 @@
     <a-marker id="milk-marker" type="pattern" url="./markers/pattern-milk.patt" cursor="rayOrigin: mouse"
       markerhandler>
 
-      <!-- Pizza Model -->
       <a-entity id="milk-3d-model" position="-2 1 0.1" scale="0.05 0.05 0.05" gltf-model="#milk-model"
         gesture-handler>
       </a-entity>
@@ -75,6 +74,77 @@
       </a-plane>
 
     </a-marker>
+
+    <a-marker id="biscuit-marker" type="pattern" url="./markers/pattern-biscuits.patt" cursor="rayOrigin: mouse"
+    markerhandler>
+   <!-- Ingredients -->
+    <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+      <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#757575">
+        <a-entity position="0 0 0.1" rotation="0 0 0"
+          text="font:monoid;value:Biscuits;color:black;width: 1.8;height:1;align:center;"></a-entity>
+      </a-plane>
+
+      <a-entity position="0 0 0.1" rotation="0 0 0"
+        text="color: black; align: center; width: 2; font: monoid;
+             value: 
+             Energy: 479kcal, ?
+             Protein: 5.9g, ?
+             Carbohydrates: 73.4g, ?
+             Of_which_Sugars: 32.2g, ?
+             Fat: 18g, ?
+             ">
+      </a-entity>
+    </a-plane>
+
+  </a-marker>
+
+  <a-marker id="chips-marker" type="pattern" url="./markers/pattern-chips.patt" cursor="rayOrigin: mouse"
+  markerhandler>
+ <!-- Ingredients -->
+  <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+    <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#757575">
+      <a-entity position="0 0 0.1" rotation="0 0 0"
+        text="font:monoid;value:Chips;color:black;width: 1.8;height:1;align:center;"></a-entity>
+    </a-plane>
+
+    <a-entity position="0 0 0.1" rotation="0 0 0"
+      text="color: black; align: center; width: 2; font: monoid;
+      value:
+      Energy: 543kcal, ?
+      Protein: 7.1g, ?
+      Carbohydrates: 53.2, ?
+      Of_which_Sugars: 5.1, ?
+      Total_Fat: 33.5g, ?
+      Saturated_Fat: 13g, ?
+      Trans_Fat: 0.1, ?
+      Sodium: 687mg, ?
+      
+           ">
+    </a-entity>
+  </a-plane>
+
+</a-marker>
+
+<a-marker id="peas-marker" type="pattern" url="./markers/pattern-peas.patt" cursor="rayOrigin: mouse"
+  markerhandler>
+ <!-- Ingredients -->
+  <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+    <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#757575">
+      <a-entity position="0 0 0.1" rotation="0 0 0"
+        text="font:monoid;value:Peas;color:black;width: 1.8;height:1;align:center;"></a-entity>
+    </a-plane>
+
+    <a-entity position="0 0 0.1" rotation="0 0 0"
+      text="color: black; align: center; width: 2; font: monoid;
+      value:
+      Energy: 84Kcal, ?
+      Protein: 6.5g, ?
+      Carbohydrates: 14.3g, ?
+      Fat: 0.1g, ?">
+    </a-entity>
+  </a-plane>
+
+</a-marker>
   </a-scene>
 
   <div id="button-div"></div>
